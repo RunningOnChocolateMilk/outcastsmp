@@ -1,0 +1,227 @@
+# POWER-TRIMS Configuration
+
+# This file contains the configuration for the PowerTrims plugin.
+
+# You can modify the values here to change the behavior of the trims.
+
+# To reload the configuration, use the command /powertrims reload, right now using reload command
+# only affects enable and disabling of trims, to change the ability values restart the server
+
+web-address: 0.0.0.0
+web-port: 8080
+upgrades:
+  max_level: 5
+passive_effects:
+  silence:
+  - STRENGTH:1
+  vex:
+  - SPEED:1
+  snout:
+  - STRENGTH:1
+  coast:
+  - DOLPHINS_GRACE:0
+  wild:
+  - REGENERATION:0
+  - RESISTANCE:0
+  tide:
+  - DOLPHINS_GRACE:0
+  dune:
+  - HASTE:0
+  - FIRE_RESISTANCE:0
+  eye:
+  - INVISIBILITY:0
+  ward:
+  - RESISTANCE:0
+  sentry:
+  - RESISTANCE:0
+  spire:
+  - SPEED:1
+  rib:
+  - RESISTANCE:0
+  bolt:
+  - SPEED:2
+  flow:
+  - SPEED:1
+trim:
+  eye:
+    primary:
+      cooldown: 120000
+# Global settings for enabling or disabling entire trim powers.
+trims:
+  sentry: true
+  silence: true
+  vex: true
+  ward: true
+  wild: true
+  coast: true
+  dune: true
+  eye: true
+  host: false
+  raiser: true
+  rib: true
+  snout: true
+  spire: true
+  tide: true
+  wayfinder: true
+  flow: true
+  bolt: true
+
+# POWER-TRIMS Configuration
+sentry:
+  primary:
+    arrow_count: 5
+    spread: 0.15
+    cooldown: 60000
+    true_damage: 1.5
+silence:
+  primary:
+    radius: 15.0
+    potion_duration_ticks: 400
+    pearl_cooldown_ticks: 200
+    max_affected_entities: 30
+    cooldown: 90000
+  passive:
+    cooldown: 120000
+    echo_radius: 6.0
+    effect_duration_ticks: 300
+  ult:
+    rage_per_hit_taken: 1.0
+    rage_per_hit_dealt: 0.5
+    max_rage: 150.0
+    warden_duration_seconds: 40
+    warden_strength_level: 2
+    warden_health_boost_level: 4
+    warden_resistance_level: 1
+    boom_cooldown_seconds: 10
+    boom_damage: 12
+    boom_length: 20.0
+    boom_aoe_radius: 3.0
+    grasp_cooldown_seconds: 15
+    grasp_radius: 25.0
+    grasp_strength: 2.0
+    leap_cooldown_seconds: 25
+    leap_power: 1.8
+    leap_slam_radius: 12.0
+    leap_slam_explosion_power: 10.0
+    leap_slam_breaks_blocks: true
+    leap_slam_sets_fire: true
+    transform_animation_seconds: 6
+    sculk_spread_radius: 10
+    lightning_random_offset: 8.0
+    enable_weather_effect: true
+vex:
+  primary:
+    cooldown: 120000
+    radius: 30.0
+    damage: 8.0
+    debuff_duration_ticks: 400
+    blindness_duration_ticks: 100
+  passive:
+    cooldown: 120000
+    hide_duration_ticks: 200
+    health_threshold: 8.0
+ward:
+  primary:
+    barrier_duration: 200
+    absorption_level: 4
+    resistance_boost_level: 2
+    cooldown: 120000
+wild:
+  primary:
+    cooldown: 15000
+    poison_duration_ticks: 200
+    grapple_range: 60.0
+    grapple_speed: 1.8
+  passive:
+    cooldown_seconds: 20
+    trigger_health: 8
+    root_trap_radius_xz: 5.0
+    root_trap_radius_y: 3.0
+    root_trap_duration_ticks: 100
+coast:
+  primary:
+    water-burst-radius: 30
+    water-burst-damage: 10
+    water-burst-cooldown: 45000
+    pull-duration-ticks: 60
+    debuff-duration-ticks: 80
+    buff-duration-ticks: 100
+    weakness-amplifier: 1
+    slowness-amplifier: 1
+    speed-amplifier: 1
+    resistance-amplifier: 0
+dune:
+  primary:
+    sandstorm_radius: 12
+    sandstorm_damage: 10
+    cooldown: 60000
+    duration: 200
+    height: 15.0
+    pull_strength: 0.5
+    lift_strength: 0.6
+    damage_per_second: 2.0
+eye:
+  primary:
+    true_sight_radius: 200.0
+    true_sight_duration_ticks: 600
+    cooldown: 120000
+    task_interval_ticks: 20
+    true_sight_vertical_radius: 80.0
+host:
+  primary:
+    cooldown: 120000
+    effect_steal_radius: 10.0
+    health_steal_amount: 4.0
+    particle_density: 4.0
+raiser:
+  primary:
+    cooldown: 12000
+    entity_pull_radius: 15.0
+    player_upward_boost: 1.5
+    pearl_cooldown_ticks: 200
+rib:
+  primary:
+    cooldown: 60000
+    minion_lifespan_ticks: 1200
+snout:
+  primary:
+    cooldown: 80000
+    minion_lifespan_ticks: 65000
+spire:
+  primary:
+    dash_distance: 20.0
+    dash_speed: 2.0
+    knockback_strength: 1.5
+    slow_duration: 60
+    vulnerable_duration: 100
+    damage_amplification: 0.6
+    cooldown: 7500
+tide:
+  primary:
+    cooldown: 80000
+    wave_width: 3.0
+    effect_duration_ticks: 300
+    knockback_strength: 1.8
+    wall_height: 6
+    move_delay_ticks: 2
+    max_moves: 20
+wayfinder:
+  primary:
+    enabled: true
+    cooldown: 120000
+flow:
+  primary:
+    heart_cost_interval: 20
+    heart_cost_amount: 2.0
+    cooldown: 80000
+    duration: 100
+bolt:
+  primary:
+    cooldown: 65000
+    chain_range: 15
+    max_chains: 3
+    initial_damage: 8.0
+    subsequent_damage: 4.0
+    target_range: 20
+    weakness_duration: 100
+    weakness_amplifier: 0

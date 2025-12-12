@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PowerTrims Guide - Outcast SMP</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <h1>Outcast SMP</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="/">Home</a></li>
+                <li><a href="/knowledge">Knowledge Bank</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <div class="knowledge-container">
+            <a href="/knowledge" class="back-button">← Back to Knowledge Bank</a>
+            
+            <div class="knowledge-content">
+                <h1>⚡ PowerTrims Guide</h1>
+                
+                <div class="rules-note" style="margin-bottom: 2rem;">
+                    <p><strong>⚠️ Important:</strong> Outcast SMP uses a <strong>heavily modified custom version</strong> of PowerTrims. Our server configuration differs significantly from the default PowerTrims plugin. The values and abilities listed below are specific to our server!</p>
+                </div>
+
+                <p>Outcast SMP uses a modified version of PowerTrims, a plugin that turns cosmetic armor trims into powerful abilities. This guide covers the <strong>custom configuration</strong> used on our server.</p>
+
+                <div class="rules-note" style="margin-top: 2rem;">
+                    <p><strong>📚 Learn More:</strong> Check out the <a href="https://divi912.github.io/PowerTrimsWebsite/" target="_blank" style="color: var(--orange-light);">official PowerTrims website</a> for the base plugin information, but remember our server uses custom values!</p>
+                </div>
+
+                <h2>🎯 How It Works</h2>
+                <p>To gain powerful abilities, you must wear a <strong>full set of armor</strong> (helmet, chestplate, leggings, and boots) that all have the <strong>same armor trim pattern</strong>. Mismatched pieces will not grant any effects.</p>
+
+                <h3>Activating Abilities</h3>
+                <ul>
+                    <li><strong>Primary Abilities:</strong> Press <code>Shift + F</code> (Swap Item in Hand key) while sneaking to activate your armor's Primary Ability.</li>
+                    <li><strong>Passive Abilities:</strong> Always active as long as you're wearing the full set. No keybind needed.</li>
+                    <li><strong>Disrupt Abilities:</strong> Trigger automatically under specific conditions (like taking heavy damage). No keybind needed.</li>
+                </ul>
+
+                <h2>✨ Available Trims</h2>
+                <p>All trims are enabled on Outcast SMP except <strong>Host</strong> trim, which is disabled.</p>
+
+                <div class="trim-section">
+                    <h3>🛡️ Sentry Trim</h3>
+                    <p><strong>Primary Ability:</strong> Fire spectral arrows to inflict large damage on nearby enemies.</p>
+                    <ul>
+                        <li><strong>Cooldown:</strong> 60 seconds</li>
+                        <li><strong>Arrow Count:</strong> 5 arrows</li>
+                        <li><strong>True Damage:</strong> 1.5 per arrow</li>
+                        <li><strong>Passive:</strong> Resistance I while wearing full set</li>
+                    </ul>
+                </div>
+
+                <div class="trim-section">
+                    <h3>🔇 Silence Trim</h3>
+                    <p><strong>Primary Ability:</strong> Releases a Warden's Roar that disables Ender Pearls in a 15-block radius. Blinds and slows all enemies in range.</p>
+                    <ul>
+                        <li><strong>Cooldown:</strong> 90 seconds</li>
+                        <li><strong>Radius:</strong> 15 blocks</li>
+                        <li><strong>Potion Duration:</strong> 20 seconds</li>
+                        <li><strong>Pearl Cooldown:</strong> 10 seconds</li>
+                        <li><strong>Passive:</strong> Strength I while wearing full set</li>
+                        <li><strong>Disrupt Ability:</strong> Warden's Echo - Triggers at 4 hearts. Knocks back enemies, grants Resistance II and Regeneration II for 15 seconds, inflicts Weakness on enemies for 5 seconds. Cooldown: 2 minutes</li>
+                        <li><strong>Ultimate:</strong> Transform into a Warden with powerful abilities (see upgrade section)</li>
+                    </ul>
+                </div>
+
+                <div class="trim-section">
+                    <h3>👻 Spectral Vex Trim</h3>
+                    <p><strong>Primary Ability:</strong> Briefly debuffs nearby players.</p>
+                    <ul>
+                        <li><strong>Cooldown:</strong> 120 seconds</li>
+                        <li><strong>Radius:</strong> 30 blocks</li>
+                        <li><strong>Damage:</strong> 8.0</li>
+                        <li><strong>Debuff Duration:</strong> 20 seconds</li>
+                        <li><strong>Blindness Duration:</strong> 5 seconds</li>
+                        <li><strong>Passive:</strong> Speed I while wearing full set</li>
+                        <li><strong>Disrupt Ability:</strong> True Invisibility for 10 seconds (invisible including armor and items). Triggers below 4 hearts. Cooldown: 2 minutes</li>
+                    </ul>
+                </div>
+
+                <div class="trim-section">
+                    <h3>🛡️ Ward Trim</h3>
+                    <p><strong>Primary Ability:</strong> Creates a personal protective barrier with enhanced defenses.</p>
+                    <ul>
+                        <li><strong>Cooldown:</strong> 120 seconds</li>
+                        <li><strong>Barrier Duration:</strong> 10 seconds</li>
+                        <li><strong>Absorption Level:</strong> 4</li>
+                        <li><strong>Resistance Boost Level:</strong> 2</li>
+                        <li><strong>Passive:</strong> Resistance I while wearing full set</li>
+                    </ul>
+                </div>
+
+                <div class="trim-section">
+                    <h3>🌿 Wild Trim</h3>
+                    <p><strong>Primary Ability:</strong> Launch a vine up to 60 blocks. Can grapple to both blocks and enemies. Grappling an enemy poisons them.</p>
+                    <ul>
+                        <li><strong>Cooldown:</strong> 15 seconds</li>
+                        <li><strong>Poison Duration:</strong> 10 seconds</li>
+                        <li><strong>Grapple Range:</strong> 60 blocks</li>
+                        <li><strong>Passive:</strong> Regeneration I and Resistance I while wearing full set</li>
+                        <li><strong>Disrupt Ability:</strong> Root Trap - Triggers at 4 hearts. Entangles nearby enemies with roots for 10 seconds. Cooldown: 20 seconds</li>
+                    </ul>
+                </div>
+
+                <div class="trim-section">
+                    <h3>🌊 Coast Trim</h3>
+                    <p><strong>Primary Ability:</strong> Instantly pulls all nearby players and mobs toward you within a 30-block radius with a powerful burst of water, inflicting debuffs.</p>
+                    <ul>
+                        <li><strong>Cooldown:</strong> 45 seconds</li>
+                        <li><strong>Water Burst Radius:</strong> 30 blocks</li>
+                        <li><strong>Damage:</strong> 10</li>
+                        <li><strong>Debuff Duration:</strong> 4 seconds (Weakness II, Slowness II)</li>
+                        <li><strong>Passive:</strong> Permanent Dolphin's Grace while wearing full set</li>
+                    </ul>
+                </div>
+
+                <div class="trim-section">
+                    <h3>🏜️ Dune Trim</h3>
+                    <p><strong>Primary Ability:</strong> Unleash a powerful sandstorm. Blinds and slows all nearby enemies. Knocks back enemies with forceful winds. Grants Strength and Speed.</p>
+                    <ul>
+                        <li><strong>Cooldown:</strong> 60 seconds</li>
+                        <li><strong>Sandstorm Radius:</strong> 12 blocks</li>
+                        <li><strong>Damage:</strong> 10</li>
+                        <li><strong>Duration:</strong> 10 seconds</li>
+                        <li><strong>Passive:</strong> Haste and Fire Resistance while wearing full set</li>
+                    </ul>
+                </div>
+
+                <div class="trim-section">
+                    <h3>👁️ Eye Trim</h3>
+                    <p><strong>Primary Ability:</strong> Reveals all entities within range. Removes invisibility from hidden enemies. Makes all entities glow for easy tracking.</p>
+                    <ul>
+                        <li><strong>Cooldown:</strong> 120 seconds</li>
+                        <li><strong>True Sight Radius:</strong> 200 blocks (horizontal), 80 blocks (vertical)</li>
+                        <li><strong>Duration:</strong> 30 seconds</li>
+                        <li><strong>Passive:</strong> Night Vision and Invisibility while wearing full set</li>
+                    </ul>
+                </div>
+
+                <div class="trim-section">
+                    <h3>⛰️ Raiser Trim</h3>
+                    <p><strong>Primary Ability:</strong> Jump up and land to create a shockwave. All entities are pulled towards you and have slowness and weakness applied. Disables ender pearl for 10 seconds.</p>
+                    <ul>
+                        <li><strong>Cooldown:</strong> 12 seconds</li>
+                        <li><strong>Entity Pull Radius:</strong> 15 blocks</li>
+                        <li><strong>Pearl Cooldown:</strong> 10 seconds</li>
+                        <li><strong>Passive:</strong> Negate all fall damage</li>
+                    </ul>
+                </div>
+
+                <div class="trim-section">
+                    <h3>💀 Rib Trim</h3>
+                    <p><strong>Primary Ability:</strong> Summon Bogged to fight for you.</p>
+                    <ul>
+                        <li><strong>Cooldown:</strong> 60 seconds</li>
+                        <li><strong>Minion Lifespan:</strong> 60 seconds</li>
+                        <li><strong>Passive:</strong> Resistance I while wearing full set</li>
+                    </ul>
+                </div>
+
+                <div class="trim-section">
+                    <h3>🐷 Snout Trim</h3>
+                    <p><strong>Primary Ability:</strong> Summons Wither Skeletons to fight by your side. These warriors fight entities who attack you or that you attack.</p>
+                    <ul>
+                        <li><strong>Cooldown:</strong> 80 seconds</li>
+                        <li><strong>Minion Lifespan:</strong> ~54 minutes</li>
+                        <li><strong>Passive:</strong> Permanent Strength I while wearing full set</li>
+                    </ul>
+                </div>
+
+                <div class="trim-section">
+                    <h3>⚡ Spire Trim</h3>
+                    <p><strong>Primary Ability:</strong> Dash forward 20 blocks in your looking direction. Enemies hit during dash are knockbacked and take 60% more damage.</p>
+                    <ul>
+                        <li><strong>Cooldown:</strong> 7.5 seconds</li>
+                        <li><strong>Dash Distance:</strong> 20 blocks</li>
+                        <li><strong>Damage Amplification:</strong> 60%</li>
+                        <li><strong>Passive:</strong> Speed I while wearing full set</li>
+                    </ul>
+                </div>
+
+                <div class="trim-section">
+                    <h3>🌊 Tide Trim</h3>
+                    <p><strong>Primary Ability:</strong> Summons a massive wall of water. Wall moves forward up to 20 blocks. Pushes back and slows enemies in its path.</p>
+                    <ul>
+                        <li><strong>Cooldown:</strong> 80 seconds</li>
+                        <li><strong>Wave Width:</strong> 3 blocks</li>
+                        <li><strong>Effect Duration:</strong> 15 seconds</li>
+                        <li><strong>Wall Height:</strong> 6 blocks</li>
+                        <li><strong>Passive:</strong> Dolphin's Grace while wearing full set</li>
+                    </ul>
+                </div>
+
+                <div class="trim-section">
+                    <h3>🧭 Wayfinder Trim</h3>
+                    <p><strong>Primary Ability:</strong> Mark a location for teleportation. Infinite range.</p>
+                    <ul>
+                        <li><strong>Cooldown:</strong> 120 seconds</li>
+                        <li><strong>Passive:</strong> Move fast while sneaking</li>
+                    </ul>
+                </div>
+
+                <div class="trim-section">
+                    <h3>💨 Flow Trim</h3>
+                    <p><strong>Primary Ability:</strong> Fly rapidly, propelled by gusts of wind. Consumes hearts to fly.</p>
+                    <ul>
+                        <li><strong>Cooldown:</strong> 80 seconds</li>
+                        <li><strong>Duration:</strong> 5 seconds</li>
+                        <li><strong>Heart Cost:</strong> 2 hearts per second</li>
+                        <li><strong>Passive:</strong> Speed I while wearing full set</li>
+                    </ul>
+                </div>
+
+                <div class="trim-section">
+                    <h3>⚡ Bolt Trim</h3>
+                    <p><strong>Primary Ability:</strong> Call down a lightning strike that chains between up to 3 targets.</p>
+                    <ul>
+                        <li><strong>Cooldown:</strong> 65 seconds</li>
+                        <li><strong>Chain Range:</strong> 15 blocks</li>
+                        <li><strong>Max Chains:</strong> 3 targets</li>
+                        <li><strong>Initial Damage:</strong> 8.0</li>
+                        <li><strong>Subsequent Damage:</strong> 4.0 per chain</li>
+                        <li><strong>Target Range:</strong> 20 blocks</li>
+                        <li><strong>Passive:</strong> Speed II while wearing full set</li>
+                    </ul>
+                </div>
+
+                <h2>🌟 Ultimate Abilities</h2>
+                <p>To unlock an Ultimate Ability, you must perform a ritual using the <code>/upgrade</code> command. Place a full set of Silence-trimmed armor into the upgrade menu and initiate the ritual.</p>
+
+                <h3>Silence Ultimate: Warden Transformation</h3>
+                <p>The Silence trim's ultimate ability transforms you into a powerful Warden with enhanced abilities:</p>
+                <ul>
+                    <li><strong>Rage System:</strong> Build rage by taking hits (1.0 per hit taken) or dealing hits (0.5 per hit dealt). Maximum rage: 150</li>
+                    <li><strong>Transformation Duration:</strong> 40 seconds</li>
+                    <li><strong>Warden Buffs:</strong> Strength II, Health Boost IV, Resistance I</li>
+                    <li><strong>Boom Ability (Shift+7):</strong> Explosive attack with 10 second cooldown. Damage: 12, Length: 20 blocks, AOE Radius: 3 blocks</li>
+                    <li><strong>Grasp Ability (Shift+8):</strong> Pulls enemies from 25 blocks away with 15 second cooldown</li>
+                    <li><strong>Leap Ability (Shift+9):</strong> Powerful leap with 25 second cooldown. Creates explosion on landing that breaks blocks and sets fire</li>
+                </ul>
+
+                <h2>💡 Tips & Strategies</h2>
+                <ul>
+                    <li>Each trim has unique strengths - experiment to find what fits your playstyle</li>
+                    <li>Full sets are required - mismatched pieces grant no abilities</li>
+                    <li>Disrupt abilities activate automatically when you're low on health - use them strategically</li>
+                    <li>Some trims work better for PvP, others for survival or mobility</li>
+                    <li>Combine trim abilities with other server features for maximum effectiveness</li>
+                </ul>
+
+                <h2>🔄 Commands</h2>
+                <ul>
+                    <li><code>/powertrims</code> or <code>/pt</code> - Base command</li>
+                    <li><code>/pt resetcooldown</code> - Resets all of your trim cooldowns</li>
+                    <li><code>/trust &lt;player&gt;</code> - Prevents your abilities from harming trusted players</li>
+                    <li><code>/untrust &lt;player&gt;</code> - Removes trust from a player</li>
+                    <li><code>/trustlist</code> - Shows your list of trusted players</li>
+                    <li><code>/upgrade</code> - Opens the ultimate ability upgrade menu</li>
+                </ul>
+
+                <div class="rules-note" style="margin-top: 3rem;">
+                    <p><strong>Note:</strong> This configuration is custom to Outcast SMP and may differ from the base PowerTrims plugin. Values are subject to change for server balance.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Outcast SMP. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
+
