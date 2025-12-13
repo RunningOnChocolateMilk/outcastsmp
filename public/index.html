@@ -67,6 +67,18 @@
             <div class="container">
                 <h2>Server Information</h2>
                 <div class="info-grid">
+                    <div class="info-card server-status-card">
+                        <h3>Server Status</h3>
+                        <div id="server-status">
+                            <div class="status-loading">
+                                <div class="status-indicator status-checking"></div>
+                                <span>Checking...</span>
+                            </div>
+                        </div>
+                        <div id="server-details" style="display: none; margin-top: 1rem;">
+                            <p id="online-count" style="font-size: 0.9rem; color: var(--text-secondary);"></p>
+                        </div>
+                    </div>
                     <div class="info-card">
                         <h3>Server IP</h3>
                         <p style="font-family: 'Courier New', monospace; font-size: 1rem;">15.235.159.106:25600</p>
