@@ -707,11 +707,13 @@ body::before {
     text-align: center;
 }
 
-.countdown-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 1rem;
-    margin-top: 1rem;
+.countdown-grid,
+#countdown {
+    display: grid !important;
+    grid-template-columns: repeat(4, 1fr) !important;
+    gap: 1rem !important;
+    margin-top: 1rem !important;
+    width: 100%;
 }
 
 .countdown-item {
@@ -750,9 +752,10 @@ body::before {
         grid-template-columns: 1fr;
     }
     
+    .countdown-grid,
     #countdown {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 0.75rem;
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 0.75rem !important;
     }
     
     .countdown-value {
