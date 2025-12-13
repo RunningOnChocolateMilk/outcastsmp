@@ -61,7 +61,6 @@ body::before {
 
 .navbar {
     background: rgba(10, 10, 15, 0.98);
-    background: rgba(10, 10, 15, 0.95);
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
     padding: 1rem 0;
@@ -277,7 +276,6 @@ body::before {
 .info-section {
     padding: 5rem 2rem;
     background: rgba(10, 10, 15, 0.8);
-    background: rgba(10, 10, 15, 0.6);
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
     position: relative;
@@ -309,8 +307,7 @@ body::before {
 }
 
 .info-card {
-    background: rgba(20, 20, 30, 0.9);
-    background: rgba(20, 20, 30, 0.7);
+    background: rgba(20, 20, 30, 0.85);
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
     padding: 2.5rem;
@@ -404,7 +401,6 @@ body::before {
 
 .footer {
     background: rgba(5, 5, 8, 0.95);
-    background: rgba(5, 5, 8, 0.9);
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
     padding: 2rem;
@@ -453,8 +449,7 @@ body::before {
 }
 
 .knowledge-card {
-    background: rgba(20, 20, 30, 0.9);
-    background: rgba(20, 20, 30, 0.7);
+    background: rgba(20, 20, 30, 0.85);
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
     padding: 2.5rem;
@@ -520,7 +515,6 @@ body::before {
     margin: 0 auto;
     padding: 3rem 2.5rem;
     background: rgba(20, 20, 30, 0.95);
-    background: rgba(20, 20, 30, 0.8);
     -webkit-backdrop-filter: blur(15px);
     backdrop-filter: blur(15px);
     border-radius: 20px;
@@ -698,13 +692,12 @@ body::before {
 .countdown-container {
     margin: 2rem 0;
     padding: 2rem;
-    background: rgba(20, 20, 30, 0.9);
     background: rgba(20, 20, 30, 0.95);
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
     border-radius: 16px;
     border: 2px solid rgba(255, 136, 0, 0.4);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5), 0 0 40px rgba(255, 136, 0, 0.2);
 }
 
 .countdown-title {
