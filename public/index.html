@@ -190,6 +190,60 @@
             updateCountdown();
             setInterval(updateCountdown, 1000);
         }
+
+        // Server Status Widget
+        async function updateServerStatus() {
+            const statusDiv = document.getElementById('server-status');
+            const detailsDiv = document.getElementById('server-details');
+            const onlineCount = document.getElementById('online-count');
+            
+            if (!statusDiv) return;
+            
+            try {
+                // Using mcstatus.io API - free and works on static sites
+                // Format: https://api.mcstatus.io/v2/status/java/{host}:{port}
+                const response = await fetch('https://api.mcstatus.io/v2/status/java/15.235.159.106:25600');
+                const data = await response.json();
+                
+                if (data.online) {
+                    statusDiv.innerHTML = `
+                        <div class="status-online">
+                            <div class="status-indicator status-online-indicator"></div>
+                            <span style="color: #00FF00;">Online</span>
+                        </div>
+                    `;
+                    
+                    if (data.players && data.players.online !== undefined) {
+                        const maxPlayers = data.players.max || '?';
+                        onlineCount.textContent = `${data.players.online} / ${maxPlayers} players online`;
+                        detailsDiv.style.display = 'block';
+                    }
+                } else {
+                    statusDiv.innerHTML = `
+                        <div class="status-offline">
+                            <div class="status-indicator status-offline-indicator"></div>
+                            <span style="color: var(--red-light);">Offline</span>
+                        </div>
+                    `;
+                    detailsDiv.style.display = 'none';
+                }
+            } catch (error) {
+                // Fallback if API fails
+                statusDiv.innerHTML = `
+                    <div class="status-offline">
+                        <div class="status-indicator status-offline-indicator"></div>
+                        <span style="color: var(--red-light);">Unable to check</span>
+                    </div>
+                `;
+                detailsDiv.style.display = 'none';
+            }
+        }
+
+        // Update server status on load and every 30 seconds
+        if (document.getElementById('server-status')) {
+            updateServerStatus();
+            setInterval(updateServerStatus, 30000); // Update every 30 seconds
+        }
     </script>
 </body>
 </html>
